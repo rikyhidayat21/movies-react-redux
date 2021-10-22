@@ -19,7 +19,6 @@ export default function Home() {
   const retrieveMovies = async () => {
     try {
       const { data } = await axios.get(`?apiKey=${API_KEY}&s=${search}`)
-      console.log(data, '<== Data')
       dispatch(addMovies(data))
     } catch (err) {
       console.log(err, '<== err')
