@@ -3,10 +3,7 @@ import {
   MDBNavbar,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
   MDBContainer,
-  MDBIcon
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
