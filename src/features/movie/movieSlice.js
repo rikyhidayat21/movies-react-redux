@@ -2,10 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from '../../config/axios'
 import { API_KEY } from '../../config/apiKey'
 
-export const retrieveAsyncMovies = createAsyncThunk('movies/retrieveAsyncMovies', async () => {
+export const retrieveAsyncMovies = createAsyncThunk('movies/retrieveAsyncMovies', async (search) => {
+
   try {
 
-    const search = "Harry"
     const { data } = await axios.get(`?apiKey=${API_KEY}&s=${search}`)
     return data
 
