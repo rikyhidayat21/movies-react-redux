@@ -16,7 +16,7 @@ function App() {
           <Route path="/movie/:imdbID" component={MovieDetail} />
 
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

@@ -8,6 +8,7 @@ import {
   MDBContainer,
   MDBIcon
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -17,9 +18,9 @@ export default function Header() {
 
           <MDBNavbarNav right className='mb-2 mb-lg-0'>
             <MDBNavbarItem active>
-              <MDBNavbarLink aria-current='page' href='#'>
+              <Link to={'/'}>
                 Movie App
-              </MDBNavbarLink>
+              </Link>
             </MDBNavbarItem>
 
           </MDBNavbarNav>
