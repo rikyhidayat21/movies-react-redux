@@ -1,4 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+### Movie App
+
+Movie App is a web application that people can search their favorites movies, read the synopsis, the creator, etc.
+
+## Features:
+
+[x] Display list of movies
+[x] Search movies by keyword
+[x] Single page for detail movie
+[x] Show movie poster using modal window if you click the image from list movies
+
+## Tech Stack:
+
+[x] React JS
+[x] Redux Toolkit
+[x] Axios
+[x] MDBoostrap
+
+## How to run Locally
+
+1. Clone this repository
+2. Choose your location and then open terminal / CMD
+3. In your terminal / CMD, follow this step:
+
+```
+$ git clone https://github.com/rikyhidayat21/movies-react-redux.git
+$ cd movies-react-redux
+$ npm i (or) yarn
+$ npm run start (or) yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
 
@@ -41,4 +74,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
