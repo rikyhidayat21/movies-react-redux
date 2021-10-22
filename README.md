@@ -4,17 +4,17 @@ Movie App is a web application that people can search their favorites movies, re
 
 ## Features:
 
-[x] Display list of movies
-[x] Search movies by keyword
-[x] Single page for detail movie
-[x] Show movie poster using modal window if you click the image from list movies
+- [x] Display list of movies
+- [x] Search movies by keyword
+- [x] Single page for detail movie
+- [x] Show movie poster using modal window if you click the image from list movies
 
 ## Tech Stack:
 
-[x] React JS
-[x] Redux Toolkit
-[x] Axios
-[x] MDBoostrap
+- [x] React JS
+- [x] Redux Toolkit
+- [x] Axios
+- [x] MDBoostrap
 
 ## How to run Locally
 
