@@ -18,7 +18,7 @@ export default function MovieList() {
             </MDBCol>
           ))) : (
             <>
-              null
+              {' '}
             </>
           )}
         </MDBRow>

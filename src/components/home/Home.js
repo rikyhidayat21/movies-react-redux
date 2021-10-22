@@ -5,10 +5,8 @@ import {
   MDBInputGroupElement,
 } from 'mdb-react-ui-kit'
 import MovieList from '../movie/MovieList'
-import axios from '../../config/axios'
-import { API_KEY } from '../../config/apiKey'
 import { useDispatch } from 'react-redux'
-import { addMovies } from '../../features/movie/movieSlice'
+import { retrieveAsyncMovies } from '../../features/movie/movieSlice'
 
 
 export default function Home() {
@@ -17,17 +15,10 @@ export default function Home() {
   const [search, setSearch] = useState("Harry")
 
   useEffect(() => {
-    retrieveMovies()
-  }, [])
+    dispatch(retrieveAsyncMovies())
+  }, [dispatch])
 
-  const retrieveMovies = async () => {
-    try {
-      const { data } = await axios.get(`?apiKey=${API_KEY}&s=${search}`)
-      dispatch(addMovies(data))
-    } catch (err) {
-      console.log(err, '<== err')
-    }
-  }
+
 
 
   return (

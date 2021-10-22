@@ -1,5 +1,6 @@
 import React from 'react'
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 
 export default function MovieCard({ movie }) {
@@ -10,9 +11,11 @@ export default function MovieCard({ movie }) {
         <MDBCardBody>
           <MDBCardTitle>{movie.Title}</MDBCardTitle>
           <MDBCardText>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            {movie.Year}
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          <Link to={`/movie/${movie.imdbID}`}>
+            <MDBBtn>Detail</MDBBtn>
+          </Link>
         </MDBCardBody>
       </MDBCard>
     </>
