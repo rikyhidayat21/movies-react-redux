@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { MDBContainer, MDBBtn, MDBInput } from 'mdb-react-ui-kit'
+import {
+  MDBContainer, MDBBtn, MDBInputGroup,
+  MDBInputGroupText,
+  MDBInputGroupElement,
+} from 'mdb-react-ui-kit'
 import MovieList from '../movie/MovieList'
 import axios from '../../config/axios'
 import { API_KEY } from '../../config/apiKey'
@@ -29,13 +33,13 @@ export default function Home() {
   return (
     <>
       <MDBContainer>
-        <div className="text-center">
+        <div>
           <form>
             <h1>Search</h1>
-            <MDBInput type="text" style={{ width: "50%" }} />
-            <MDBBtn>
-              Search
-            </MDBBtn>
+            <MDBInputGroup className='mb-3'>
+              <MDBInputGroupElement placeholder="Search Movies" type='text' />
+              <MDBBtn outline>Search</MDBBtn>
+            </MDBInputGroup>
           </form>
         </div>
 
