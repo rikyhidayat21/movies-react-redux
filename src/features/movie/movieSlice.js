@@ -6,7 +6,7 @@ export const retrieveAsyncMovies = createAsyncThunk('movies/retrieveAsyncMovies'
 
   try {
 
-    const { data } = await axios.get(`?apiKey=${API_KEY}&s=${search}`)
+    const { data } = await axios.get(`?apiKey=${API_KEY}&s=${search}&page=2`)
     return data
 
   } catch (error) {
@@ -40,17 +40,17 @@ const movieSlice = createSlice({
   },
   extraReducers: {
     [retrieveAsyncMovies.pending]: () => {
-      console.log('Pending')
+      // console.log('Pending')
     },
     [retrieveAsyncMovies.fulfilled]: (state, { payload }) => {
-      console.log("retrieve success")
+      // console.log("retrieve success")
       return { ...state, movies: payload }
     },
     [retrieveAsyncMovies.rejected]: () => {
       console.log('Rejected')
     },
     [retrieveAsyncMovieDetail.fulfilled]: (state, { payload }) => {
-      console.log('retrieve success')
+      // console.log('retrieve success')
       return { ...state, movieByImdbID: payload }
     }
   }

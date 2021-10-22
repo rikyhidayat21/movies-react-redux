@@ -8,7 +8,7 @@ export default function MovieDetail() {
   const { imdbID } = useParams()
   const dispatch = useDispatch()
   const movieDetail = useSelector(getMovieDetail)
-  console.log(movieDetail, '<== movie detail')
+  // console.log(movieDetail, '<== movie detail')
 
   useEffect(() => {
     dispatch(retrieveAsyncMovieDetail(imdbID))
@@ -26,7 +26,7 @@ export default function MovieDetail() {
 
         <MDBCard style={{ maxWidth: '100%' }} className="rounded shadow mb-3">
           <MDBRow className='g-0'>
-            <MDBCol md='4'>
+            <MDBCol md='4' className="text-center">
               <MDBCardImage src={movieDetail.Poster} alt={movieDetail.Title} fluid />
             </MDBCol>
             <MDBCol md='8'>
