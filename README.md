@@ -15,6 +15,7 @@ Movie App is a web application that people can search their favorites movies, re
 - [x] Redux Toolkit
 - [x] Axios
 - [x] MDBoostrap
+- [x] React Router DOM
 
 ## How to run Locally
 
