@@ -33,6 +33,14 @@ $ npm run start (or) yarn start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## About the projects
+
+The project is a web application that allows you to find your favorites movies.
+When you open [http://localhost:3000](http://localhost:3000), you will see a Header, a Text: Find your favorite Movies, and an input with button search.
+You can type or entry your favorite movie in the input from, and then click search button.
+After you click entry the movie and click the search button, you will see list of the movie that you type in.
+You can click the image of the list movie, than you will see a pop up window about the image, and within the pop up window, you will see a button, and if you click the button, you will go to single page movie.
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
